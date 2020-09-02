@@ -15,22 +15,22 @@ $(() => {
       [0, 1, 2],
       [0, 3, 6],
       [0, 4, 8],
-      [3, 4, 5],
-      [6, 7, 8],
       [0, 3, 6], 
       [1, 4, 7],
+      [2, 4, 6],
+      [3, 4, 5],
       [2, 5, 8],
-      [2, 4, 6]
+      [6, 7, 8]      
       ];
   
-  
+      let win;
   let board;
   let turn = 'X';
-  let win;
+ 
     
   const squares = Array.from(document.querySelectorAll('#board div'));
   
-  /*----- event listeners -----*/
+
   document.getElementById('board').addEventListener('click', handleTurn);
   const messages = document.querySelector('h3');
   document.getElementById('reset-button').addEventListener('click', init);
