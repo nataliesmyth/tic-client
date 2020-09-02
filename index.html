@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <main>
+        <header>
+          <h1>Tic Tac Toe!</h1>
+        </header>
+
+        <h2> This is a toy application. Do not use real passwords!</h2>
+
+          <form id ="sign-up">
+            <input name="credentials[email]" type="text" placeholder="email">
+            <input name="credentials[password]" type="password" placeholder="password">
+            <input name="credentials[password_confirmation]" type="password" placeholder="confirm password">
+            <button type="submit">Sign Up</button>
+          </form>
+          
+          <form id="sign-in">
+            <input name="credentials[email]" type="text" placeholder="email">
+            <input name="credentials[password]" type="password" placeholder="password">
+            <button type="submit">Sign In</button>
+          </form>
+          
+          <form>
+            <input name="passwords[old]" type="password" placeholder="current password">
+            <input name="passwords[new]" type="password" placeholder="new password">
+            <button type="submit">Change Password</button>
+          </form>
+
+         
+          <div id="tic-game"></div>
+          <h3></h3>
+          <div class="flex-container flex-column">
+            <div class="flex-container flex-wrap" id="board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            </div>
+            <button id="reset-button">reset</button>
+        </div>
+
+      </main>
+    </body>
+</html>
